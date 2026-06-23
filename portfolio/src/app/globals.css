@@ -128,3 +128,27 @@
     @apply font-sans;
   }
 }
+
+@layer utilities {
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
+  .typing-effect {
+    display: inline-flex;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1.5s steps(30, end) 0.8s both, blink 0.75s step-end infinite;
+  }
+}
