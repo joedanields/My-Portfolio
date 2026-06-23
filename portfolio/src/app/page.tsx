@@ -4,7 +4,7 @@ import Image from "next/image";
 import TextPressure from '@/components/TextPressure';
 import { hyperspeedPresets } from '@/components/HyperSpeedPresets';
 import Hyperspeed from '@/components/Hyperspeed';
-
+import ShinyText from '@/components/ShinyText';
 // Using "Neon Waves" preset
 
 export default function Home() {
@@ -33,7 +33,19 @@ export default function Home() {
             minFontSize={18}
           />
         </div>
-
+        <ShinyText
+          text="JOE_DANIEL_A"
+          className="text-5xl md:text-7xl font-black uppercase font-['Roboto_Flex'] tracking-tight mt-1"
+          speed={3.4}
+          delay={0}
+          color="#f7f7f7"
+          shineColor="#bea864"
+          spread={95}
+          direction="left"
+          yoyo={false}
+          pauseOnHover={false}
+          disabled={false}
+        />
         
 
         
